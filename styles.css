@@ -1,0 +1,26 @@
+p {
+	font-family: Quicksand, sans-serif;
+	font-size: 48px;
+}
+
+body {
+	background-color: #30F2C6;
+	color: #fff;
+	text-align: center;
+}
+
+
+img {
+	height: 90vh;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+form {
+	width: 80%;
+}
+
+button {
+	margin: 20px;
+	width: 100px;
+}

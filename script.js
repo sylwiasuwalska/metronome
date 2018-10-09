@@ -61,11 +61,14 @@ class Metronome extends React.Component {
 	}
 
 	render() {
-		return 	<div>
-					<form>
+		return 	<div className="row unmargin container-fluid align-items-center">
+					<div className="col">
+						<img src="https://crosseyedpianist.files.wordpress.com/2011/09/ayqq3hncmaaqvkh.jpg" />
+					</div>
+					<form className="col">
 						<p>{this.state.bpm} BPM</p>
-						<input type="range" className="form-control-range" min="30" max="300" value={this.state.bpm} onChange={this.bpmChange.bind(this)} />
-						<button onClick={this.startStop.bind(this)}>{this.state.label}</button>
+						<input type="range" className="form-control-range input-spacer" min="30" max="300" value={this.state.bpm} onChange={this.bpmChange.bind(this)} />
+						<button className="btn btn-outline-dark"onClick={this.startStop.bind(this)}>{this.state.label}</button>
 					</form>
 
 				</div>
