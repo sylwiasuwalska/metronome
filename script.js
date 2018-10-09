@@ -1,5 +1,8 @@
 'use strict';
 
+var context = new AudioContext()
+
+
 class Metronome extends React.Component {
 	constructor(props) {
 		super(props);
@@ -48,13 +51,12 @@ class Metronome extends React.Component {
 	}
 
 	playSound() {
-		var context = new AudioContext()
 		var o = context.createOscillator()
+		o.frequency.value = 200;
 		var g = context.createGain()
 		o.connect(g)
 		g.connect(context.destination)
-
-		o.start(0)
+		o.start(context.currentTime)
 		g.gain.exponentialRampToValueAtTime(0.00001, context.currentTime + 0.01)
 	}
 
