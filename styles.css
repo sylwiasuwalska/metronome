@@ -1,12 +1,12 @@
-p {
-	font-family: Quicksand, sans-serif;
-	font-size: 48px;
-}
-
 body {
 	background-color: #30f2c6;
 	color: #fff;
 	text-align: center;
+}
+
+p {
+	font-family: Quicksand, sans-serif;
+	font-size: 48px;
 }
 
 img {
